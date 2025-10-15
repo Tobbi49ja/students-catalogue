@@ -143,3 +143,23 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media(max-width: 425px){
+  .logo-contanier{
+
+    width: 50%;
+  }
+  .content-container{
+    width: 50%;
+        justify-items: end;
+    align-content: center;
+  }
+  .content-container h1{
+    padding-left: 18px;
+    font-size: 2rem;
+  }
+}
+@media(max-width: 320px){
+  .content-container h1{
+    font-size: 1.5rem;
+  }
+}

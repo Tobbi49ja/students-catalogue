@@ -23,10 +23,11 @@ const students = [
       projectLink: "https://all-bride-assembly-church.vercel.app/",
   },
   {
-    name: "David Chen",
+    name: "Tob",
     age: 23,
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=300&fit=crop",
+      "/Tob.jpg",
+      projectLink: "https://ourportfolio-t.netlify.app",
   },
   {
     name: "Sophie Williams",

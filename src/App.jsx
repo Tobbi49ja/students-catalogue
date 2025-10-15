@@ -56,8 +56,8 @@ function App() {
   
       useEffect(() => {
     AOS.init({
-      duration: 800, // animation speed
-      once: true, // only animate once
+      duration: 800,
+      once: true, 
     });
   }, []);
   return (
@@ -74,7 +74,7 @@ function App() {
         </div>
       </header>
 
-      <div className="catalogue" >
+      <div className="catalogue" data-aos="fade-up" data-aos-delay="400">
         {students.map((student, index) => (
           <StudentCard
             key={index}

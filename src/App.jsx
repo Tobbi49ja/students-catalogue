@@ -11,7 +11,8 @@ const students = [
     name: "Tobbi",
     age: 23,
     image:
-      "/src/assets/tobbi.jpg",
+      // "/src/assets/tobbi.jpg",
+      "/tobbi.jpg",
       projectLink: "https://reactlogistics.onrender.com/",
   },
   {
@@ -66,7 +67,7 @@ function App() {
       <header className="header" data-aos="fade-down">
         <div className="logo-contanier">
           <a href="">
-            <img src="/src/assets/Logo.png" alt="Logo" className="logoCard" />
+            <img src="/Logo.png" alt="Logo" className="logoCard" />
           </a>
         </div>
         <div className="content-container"data-aos="zoom-in" data-aos-delay="200">

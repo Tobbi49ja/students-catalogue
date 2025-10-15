@@ -16,10 +16,11 @@ const students = [
       projectLink: "https://reactlogistics.onrender.com/",
   },
   {
-    name: "Maria Garcia",
+    name: "Dev_Godswill",
     age: 24,
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=300&fit=crop",
+      "/valentina.jpg",
+      projectLink: "https://all-bride-assembly-church.vercel.app/",
   },
   {
     name: "David Chen",

@@ -9,7 +9,7 @@ import StudentCard from "./components/StudentCard";
 const students = [
   {
     name: "Tobbi",
-    age: 23,
+    age: 22,
     image:
       // "/src/assets/tobbi.jpg",
       "/tobbi.jpg",
@@ -30,28 +30,32 @@ const students = [
       projectLink: "https://ourportfolio-t.netlify.app",
   },
   {
-    name: "Sophie Williams",
+    name: "Ali Pelumi",
     age: 21,
     image:
-      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=300&fit=crop",
+      "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
+      projectLink: "https://ghosthandle.netlify.app",
   },
   {
-    name: "Marcus Johnson",
+    name: "jay",
     age: 25,
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=300&fit=crop",
+      "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
+      projectLink: "https://godfreyjr-weather-app.vercel.app/",
   },
   {
-    name: "Aisha Patel",
+    name: "emma berry",
     age: 26,
     image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=300&fit=crop",
+      "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
+      projectLink: "https://attahe.netlify.app/",
   },
   {
-    name: "Ryan Mitchell",
+    name: "jerry jnr",
     age: 27,
     image:
-      "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=300&fit=crop",
+      "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
+      projectLink: "http://jerry-e-portfolio.netlify.app",
   },
 ];
 

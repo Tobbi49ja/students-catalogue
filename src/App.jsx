@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import StudentCard from "./components/StudentCard";
+import Footer from "./components/Footer";
 
 
 
@@ -92,6 +93,7 @@ function App() {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

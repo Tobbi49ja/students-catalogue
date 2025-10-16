@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background: radial-gradient(
       circle at center,
       rgba(59, 130, 246, 0.4),
@@ -21,15 +21,14 @@ body {
   transition: background 0.2s ease-out;
 }
 
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 50px;
 }
 
@@ -38,8 +37,8 @@ body {
   font-weight: 700;
   margin-bottom: 15px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    opacity: 0.9;
-    color: white;
+  opacity: 0.9;
+  color: white;
 }
 
 /* .header p {
@@ -52,29 +51,29 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   padding: 20px 0;
-  justify-items: center; 
+  justify-items: center;
 }
-.logo-contanier{
-    width: 30%;
+.logo-contanier {
+  width: 30%;
 
-    align-items: center;
+  align-items: center;
 }
-.content-container{
-    width: 70%;
-    justify-items: center;
-    align-content: center;
+.content-container {
+  width: 70%;
+  justify-items: center;
+  align-content: center;
 }
-.border{
-    border: 1px solid red;
+.border {
+  border: 1px solid red;
 }
-.logoCard{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 10%;
-    border: 2px solid #3b82f6;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-    margin-bottom: 15px;
+.logoCard {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+  border: 2px solid #3b82f6;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  margin-bottom: 15px;
 }
 .student-card {
   background: rgb(204, 205, 206);
@@ -115,7 +114,6 @@ body {
   margin-bottom: 20px;
   font-weight: 500;
 }
-
 .project-link {
   display: inline-block;
   padding: 12px 30px;
@@ -133,7 +131,65 @@ body {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
 }
+footer {
+  text-align: right;
+  font-style: italic;
+  text-transform: uppercase;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+.glow-text {
+  font-weight: 800;
+  background: linear-gradient(90deg, #38bdf8 0%, #ffffff 50%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative;
+  display: inline-block;
 
+  -webkit-text-fill-color: transparent;
+}
+.copywrite-color {
+  color: #bcdfee;
+  font-weight: 100;
+}
+.subtle {
+  animation: gradientShift 3s ease-in-out infinite,
+    glowPulseSubtle 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes glowPulseSubtle {
+  0% {
+    text-shadow: 0 0 6px rgba(56, 189, 248, 0.6),
+      0 0 12px rgba(56, 189, 248, 0.25);
+    filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.15));
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+      0 0 20px rgba(255, 255, 255, 0.15);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.08));
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(56, 189, 248, 0.6),
+      0 0 12px rgba(56, 189, 248, 0.25);
+    filter: drop-shadow(0 0 6px rgba(56, 189, 248, 0.15));
+  }
+}
 @media (max-width: 768px) {
   .header h1 {
     font-size: 2rem;
@@ -143,23 +199,22 @@ body {
     grid-template-columns: 1fr;
   }
 }
-@media(max-width: 425px){
-  .logo-contanier{
-
+@media (max-width: 425px) {
+  .logo-contanier {
     width: 50%;
   }
-  .content-container{
+  .content-container {
     width: 50%;
-        justify-items: end;
+    justify-items: end;
     align-content: center;
   }
-  .content-container h1{
+  .content-container h1 {
     padding-left: 18px;
     font-size: 2rem;
   }
 }
-@media(max-width: 320px){
-  .content-container h1{
+@media (max-width: 320px) {
+  .content-container h1 {
     font-size: 1.5rem;
   }
 }

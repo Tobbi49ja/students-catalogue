@@ -1,83 +1,82 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./App.css";
 import StudentCard from "./components/StudentCard";
 import Footer from "./components/Footer";
-
-
+import NotFound from "./pages/Error";
 
 const students = [
   {
     name: "Tobbi",
     age: 22,
-    image:
-      // "/src/assets/tobbi.jpg",
-      "/tobbi.jpg",
-      projectLink: "https://reactlogistics.onrender.com/",
+    image: "/tobbi.jpg",
+    projectLink: "https://reactlogistics.onrender.com/",
   },
   {
     name: "Dev_Godswill",
     age: 24,
-    image:
-      "/valentina.jpg",
-      projectLink: "https://all-bride-assembly-church.vercel.app/",
+    image: "/valentina.jpg",
+    projectLink: "https://all-bride-assembly-church.vercel.app/",
   },
   {
     name: "Tob",
     age: 23,
-    image:
-      "/Tob.jpg",
-      projectLink: "https://ourportfolio-t.netlify.app",
+    image: "/Tob.jpg",
+    projectLink: "https://ourportfolio-t.netlify.app",
   },
   {
     name: "Ali Pelumi",
     age: 21,
     image:
       "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
-      projectLink: "https://ghosthandle.netlify.app",
+    projectLink: "https://ghosthandle.netlify.app",
   },
   {
     name: "jay",
     age: 25,
     image:
       "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
-      projectLink: "https://godfreyjr-weather-app.vercel.app/",
+    projectLink: "https://godfreyjr-weather-app.vercel.app/",
   },
   {
     name: "emma berry",
     age: 26,
     image:
       "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
-      projectLink: "https://attahe.netlify.app/",
+    projectLink: "https://attahe.netlify.app/",
   },
   {
     name: "jerry jnr",
     age: 27,
     image:
       "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
-      projectLink: "http://jerry-e-portfolio.netlify.app",
+    projectLink: "http://jerry-e-portfolio.netlify.app",
   },
 ];
 
-function App() {
-  
-      useEffect(() => {
+function Home() {
+  useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true, 
+      once: true,
     });
   }, []);
+
   return (
-    
-    <div className="container ">
+    <div className="container">
       <header className="header" data-aos="fade-down">
         <div className="logo-contanier">
           <a href="">
             <img src="/Logo.png" alt="Logo" className="logoCard" />
           </a>
         </div>
-        <div className="content-container"data-aos="zoom-in" data-aos-delay="200">
+        <div
+          className="content-container"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
           <h1>Student Catalogue 2025</h1>
         </div>
       </header>
@@ -95,6 +94,17 @@ function App() {
       </div>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
   );
 }
 

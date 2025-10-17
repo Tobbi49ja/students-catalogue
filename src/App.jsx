@@ -41,17 +41,17 @@ const students = [
     projectLink: "https://godfreyjr-weather-app.vercel.app/",
   },
   {
-    name: "emma berry",
+    name: "attah",
     age: 26,
     image:
-      "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
+      "/emmaberry.jpg",
     projectLink: "https://attahe.netlify.app/",
   },
   {
-    name: "jerry jnr",
+    name: "Jerry Emmanuel",
     age: 27,
     image:
-      "https://media.istockphoto.com/id/2227015783/photo/isolated-user-profile-identity-secured-by-a-shield-icon.webp?a=1&b=1&s=612x612&w=0&k=20&c=3_umNL-gKGVEpFGtXTIeKMBAF3Yzs0JmB64I4I5sHg4=",
+      "/jerry-jrn.jpg",
     projectLink: "http://jerry-e-portfolio.netlify.app",
   },
 ];
